@@ -1,11 +1,17 @@
-import * as React from "react"
+import * as React from 'react';
+import { Link } from 'gatsby';
 
-const IndexPage = () => {
+function IndexPage() {
   return (
-    <main>
-
-    </main>
-  )
+    <ul>
+      <li>
+        <h1>Hello</h1>
+      </li>
+      <li>
+        <Link to="test-page">Test page</Link>
+      </li>
+    </ul>
+  );
 }
 
-export default IndexPage
+export default IndexPage;

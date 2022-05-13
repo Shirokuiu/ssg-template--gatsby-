@@ -13,7 +13,11 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .tsx --ext .ts src/",
+    "lint:style": "stylelint --fix \"src/**/*.scss\" --syntax=scss -q",
+    "prettier": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "gatsby": "^4.14.0",
@@ -25,13 +29,35 @@
     "gatsby-transformer-sharp": "^4.14.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.51.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.16",
+    "@typescript-eslint/eslint-plugin": "5.20.0",
+    "@typescript-eslint/parser": "5.20.0",
+    "eslint": "8.13.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "2.7.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.4.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "postcss": "8.4.12",
+    "prettier": "2.6.2",
+    "stylelint": "13.6.1",
+    "stylelint-declaration-use-variable": "1.7.3",
+    "stylelint-order": "5.0.0",
+    "stylelint-scss": "4.2.0",
     "typescript": "^4.6.4"
+  },
+  "lint-staged": {
+    "*.{tsx,ts}": "eslint --fix",
+    "*.scss": "stylelint --fix \"src/**/*.scss\" --syntax=scss -q"
   }
 }

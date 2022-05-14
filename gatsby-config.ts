@@ -10,6 +10,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-preload-fonts',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',

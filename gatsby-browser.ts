@@ -1,1 +1,1 @@
-import 'normalize.css';
+import '@assets/styles/index.scss';

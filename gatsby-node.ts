@@ -8,7 +8,7 @@ exports.onCreateWebpackConfig = function ({ actions }: { actions: any }) {
         '@components': path.resolve(__dirname, 'src/components'),
         '@assets': path.resolve(__dirname, 'src/assets'),
         '@services': path.resolve(__dirname, 'src/services'),
-        '@gatsby-browser': path.resolve(__dirname, './gatsby-browser.ts'),
+        '@main': path.resolve(__dirname, 'src/main.ts'),
       },
     },
   });

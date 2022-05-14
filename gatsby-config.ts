@@ -13,6 +13,14 @@ const config: GatsbyConfig = {
     'gatsby-plugin-preload-fonts',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',

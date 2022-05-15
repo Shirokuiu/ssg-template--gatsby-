@@ -1,5 +1,15 @@
 @import 'src/assets/styles/variables';
 
+html,
+body {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .svg-icon {
   display: block;
   width: 100%;

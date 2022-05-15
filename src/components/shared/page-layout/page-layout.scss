@@ -1,0 +1,13 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    flex: 1 0 auto;
+  }
+
+  &__footer-wrap {
+    flex: 0 0 auto;
+  }
+}

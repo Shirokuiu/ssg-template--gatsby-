@@ -1,0 +1,79 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  @include reset;
+  list-style: none;
+}
+
+@mixin reset-button {
+  @include reset;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@mixin reset-input {
+  @include reset;
+  @include reset-button;
+  display: block;
+  width: 100%;
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%); // stylelint-disable-line
+}
+
+@mixin placeholder($fontFamily, $fontSize, $fontWeight, $color) {
+
+  &::-webkit-input-placeholder {
+    font-size: $fontSize;
+    font-family: $fontFamily, sans-serif;
+    font-weight: $fontWeight;
+    line-height: $fontSize + 4;
+    color: $color;
+    opacity: 1;
+  }
+
+  // stylelint-disable-next-line
+  &:-moz-input-placeholder {
+    font-size: $fontSize;
+    font-family: $fontFamily, sans-serif;
+    font-weight: $fontWeight;
+    line-height: $fontSize + 4;
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    font-size: $fontSize;
+    font-family: $fontFamily, sans-serif;
+    font-weight: $fontWeight;
+    line-height: $fontSize + 4;
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    font-size: $fontSize;
+    font-family: $fontFamily, sans-serif;
+    font-weight: $fontWeight;
+    line-height: $fontSize + 4;
+    color: $color;
+    opacity: 1;
+  }
+}
+

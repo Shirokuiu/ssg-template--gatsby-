@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import PageLayout from '@components/shared/page-layout/page-layout';
-import CenterLayout from '@components/shared/center-layout/center-layout';
 import { useAppDispatch, useAppSelector } from '@hooks/index';
 import { getTitle } from '@store/index-page-process/selectors';
 import { clearState } from '@store/index-page-process/reducer/index-page-process';
+import PageLayout from '@components/layouts/page-layout/page-layout';
+import CenterLayout from '@components/layouts/center-layout/center-layout';
 
 function IndexPage() {
   const title = useAppSelector(getTitle);

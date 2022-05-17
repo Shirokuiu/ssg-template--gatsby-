@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Props } from '@components/shared/page-layout/types';
+import { Props } from '@components/layouts/page-layout/types';
 import './page-layout.scss';
 import SvgSprite from '@assets/sprites/_sprite.svg';
 

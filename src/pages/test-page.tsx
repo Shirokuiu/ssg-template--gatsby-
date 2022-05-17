@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Icon from '@assets/img/atention.svg';
-import PageLayout from '@components/shared/page-layout/page-layout';
+import PageLayout from '@components/layouts/page-layout/page-layout';
 import SvgSpriteIcon from '@components/shared/svg-sprite-icon/svg-sprite-icon';
 
 function TestPage() {

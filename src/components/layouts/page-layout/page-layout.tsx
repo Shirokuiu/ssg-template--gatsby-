@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { Props } from '@layouts/page-layout/types';
-import './page-layout.scss';
+
 import SvgSprite from '@assets/sprites/_sprite.svg';
+import './page-layout.scss';
 
 function PageLayout({ children, renderFooter = () => null }: Props) {
   return (

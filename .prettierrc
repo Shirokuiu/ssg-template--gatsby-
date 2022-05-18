@@ -1,5 +1,22 @@
 {
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 100
+  "printWidth": 100,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "react",
+    "gatsby",
+    "",
+    "@hooks",
+    "@store",
+    "@services",
+    "",
+    "@layouts",
+    "@shared",
+    "@ui",
+    "",
+    "@assets"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
 }

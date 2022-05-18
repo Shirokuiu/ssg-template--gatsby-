@@ -1,11 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 import { useAppDispatch, useAppSelector } from '@hooks/index';
-import { getTitle } from '@store/index-page-process/selectors';
 import { clearState } from '@store/index-page-process/reducer/index-page-process';
-import PageLayout from '@layouts/page-layout/page-layout';
+import { getTitle } from '@store/index-page-process/selectors';
+
 import CenterLayout from '@layouts/center-layout/center-layout';
+import PageLayout from '@layouts/page-layout/page-layout';
 
 function IndexPage() {
   const title = useAppSelector(getTitle);

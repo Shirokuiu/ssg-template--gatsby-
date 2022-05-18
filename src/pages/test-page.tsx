@@ -1,10 +1,11 @@
-import { Link } from 'gatsby';
 import React from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Icon from '@assets/img/atention.svg';
 import PageLayout from '@layouts/page-layout/page-layout';
 import SvgSpriteIcon from '@shared/svg-sprite-icon/svg-sprite-icon';
+
+import Icon from '@assets/img/atention.svg';
 
 function TestPage() {
   return (

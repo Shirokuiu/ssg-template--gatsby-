@@ -4,8 +4,8 @@ import { Link } from 'gatsby';
 import { useAppDispatch, useAppSelector } from '@hooks/index';
 import { getTitle } from '@store/index-page-process/selectors';
 import { clearState } from '@store/index-page-process/reducer/index-page-process';
-import PageLayout from '@components/layouts/page-layout/page-layout';
-import CenterLayout from '@components/layouts/center-layout/center-layout';
+import PageLayout from '@layouts/page-layout/page-layout';
+import CenterLayout from '@layouts/center-layout/center-layout';
 
 function IndexPage() {
   const title = useAppSelector(getTitle);

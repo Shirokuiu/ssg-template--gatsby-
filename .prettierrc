@@ -13,7 +13,7 @@
     "",
     "@layouts",
     "@shared",
-    "@ui",
+    "@containers",
     "",
     "@assets"
   ],

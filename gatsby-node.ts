@@ -7,7 +7,7 @@ exports.onCreateWebpackConfig = function ({ actions }: { actions: any }) {
       alias: {
         '@layouts': path.resolve(__dirname, 'src/components/layouts'),
         '@shared': path.resolve(__dirname, 'src/components/shared'),
-        '@ui': path.resolve(__dirname, 'src/components/ui'),
+        '@containers': path.resolve(__dirname, 'src/components/containers'),
         '@assets': path.resolve(__dirname, 'src/assets'),
         '@services': path.resolve(__dirname, 'src/services'),
         '@main': path.resolve(__dirname, 'src/main.ts'),

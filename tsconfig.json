@@ -31,7 +31,7 @@
      "paths": {
        "@layouts/*": ["src/components/layouts/*"],
        "@shared/*": ["src/components/shared/*"],
-       "@ui/*": ["src/components/ui/*"],
+       "@containers/*": ["src/components/containers/*"],
        "@assets/*": ["src/assets/*"],
        "@services/*": ["src/services/*"],
        "@main": ["src/main.ts"],

@@ -36,6 +36,7 @@
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
     "react-redux": "8.0.1",
+    "react-simple-modal-provider": "^1.9.0",
     "redux": "4.2.0",
     "reselect": "4.1.5"
   },

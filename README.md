@@ -19,6 +19,9 @@
 - Gatsby-preload-fonts - оптимизация шрифтов
 - @ianvs/prettier-plugin-sort-imports - автоматическая сортировка импортов с помощью prettier
 
+**Поддрежка плагинов:**
+- Модальные окна - https://github.com/seungdeng17/react-simple-modal-provider#api
+
 **Файловая система**
 
 ```

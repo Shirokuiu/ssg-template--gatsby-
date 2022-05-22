@@ -1,0 +1,6 @@
+@import 'src/assets/styles/mixins';
+@import 'src/assets/styles/variables';
+
+.input-text {
+  @include reset-input;
+}

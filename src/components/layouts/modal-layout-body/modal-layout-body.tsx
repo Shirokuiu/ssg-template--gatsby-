@@ -1,9 +1,9 @@
 import { useModalProps } from 'react-simple-modal-provider';
 
-import { ModalId } from '@shared/base-modal/types';
+import { Props } from '@layouts/modal-layout-body/types';
 
-function ModalLayoutBody() {
-  const { component } = useModalProps(ModalId.BaseModal);
+function ModalLayoutBody({ modalId }: Props) {
+  const { component } = useModalProps(modalId);
 
   return component;
 }

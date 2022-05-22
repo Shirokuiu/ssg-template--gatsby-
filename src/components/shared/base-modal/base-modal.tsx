@@ -15,7 +15,7 @@ function BaseModal({ children }: Props) {
       isOpen={isOpen}
       setOpen={setOpen}
     >
-      <ModalLayoutBody />
+      <ModalLayoutBody modalId={ModalId.BaseModal} />
     </Modal>
   );
 }

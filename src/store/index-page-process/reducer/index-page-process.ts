@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { NameSpace } from '@store/constants';
 import { ActionType } from '@store/index-page-process/action-type';
 import { InitialState } from '@store/types/index-page-process';
-import { NameSpace } from '@store/constants';
 
 const initialState: InitialState = {
   title: 'Hello',

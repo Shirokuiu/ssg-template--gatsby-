@@ -53,6 +53,7 @@
     "react/prop-types": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "no-param-reassign": 0,
+    "jsx-a11y/control-has-associated-label": "off",
     "jsx-a11y/label-has-associated-control": ["error", {
       "required": {
         "some": ["nesting", "id"]

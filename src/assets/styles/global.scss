@@ -21,6 +21,7 @@ img {
 
 // Переполнение контента для модальных окон
 .overlay-base {
+  box-sizing: border-box;
   position: fixed !important; //stylelint-disable-line
   z-index: 10 !important; //stylelint-disable-line
   top: 0 !important; //stylelint-disable-line

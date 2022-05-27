@@ -30,6 +30,14 @@ const config: GatsbyConfig = {
       // @ts-ignore
       __key: 'images',
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/assets/img/favicon.png',
+      },
+    },
   ],
 };
 

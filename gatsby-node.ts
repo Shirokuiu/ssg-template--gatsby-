@@ -13,6 +13,8 @@ exports.onCreateWebpackConfig = function ({ actions }: { actions: any }) {
         '@main': path.resolve(__dirname, 'src/main.ts'),
         '@store': path.resolve(__dirname, 'src/store'),
         '@hooks': path.resolve(__dirname, 'src/hooks'),
+        '@constants': path.resolve(__dirname, 'src/constants'),
+        '@type': path.resolve(__dirname, 'src/type'),
       },
     },
   });

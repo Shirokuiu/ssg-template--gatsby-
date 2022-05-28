@@ -4,22 +4,22 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import PageLayout from '@layouts/page-layout/page-layout';
-import BaseModal from '@shared/base-modal/base-modal';
-import Btn from '@shared/btn/btn';
 import SvgSpriteIcon from '@shared/svg-sprite-icon/svg-sprite-icon';
+import ExampleTriggerModal from '@containers/example-trigger-modal/example-trigger-modal';
+import TestModal from '@containers/test-modal/test-modal';
 
 import Icon from '@assets/img/atention.svg';
 
 function TestPage() {
   return (
-    <ModalProvider value={[BaseModal]}>
+    <ModalProvider value={[TestModal]}>
       <PageLayout>
         <ul>
           <li>
             <h1>Hello from test page</h1>
           </li>
           <li>
-            <Btn />
+            <ExampleTriggerModal />
           </li>
           <li>
             <StaticImage placeholder="blurred" src="../assets/img/icon.png" alt="test" />

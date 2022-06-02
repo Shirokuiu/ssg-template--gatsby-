@@ -6,4 +6,6 @@ export type Props = {
   min?: number;
   className?: string;
   onChange?: (value: number) => void;
+  onBlur?: (value: number) => void;
+  onKeyDownEnter?: (value: number) => void;
 };

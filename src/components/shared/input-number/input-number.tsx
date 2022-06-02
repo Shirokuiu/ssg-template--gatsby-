@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, FocusEvent, KeyboardEvent, useEffect, useState } from 'react';
 
 import { Props } from '@shared/input-number/types';
 
@@ -12,6 +12,8 @@ function InputNumber({
   placeholder = '0',
   className = '',
   onChange = () => undefined,
+  onBlur = () => undefined,
+  onKeyDownEnter = () => undefined,
 }: Props) {
   const [inputValue, setInputValue] = useState<number>(min);
 
@@ -24,6 +26,20 @@ function InputNumber({
     onChange(+evt.target.value);
   };
 
+  const handleInputBlur = () => {
+    onBlur(inputValue);
+  };
+
+  const handleInputKeyDown = (evt: KeyboardEvent<HTMLInputElement>) => {
+    if (evt.key === 'Enter') {
+      onKeyDownEnter(inputValue);
+    }
+  };
+
+  const handleInputFocus = (evt: FocusEvent<HTMLInputElement>) => {
+    evt.target.select();
+  };
+
   return (
     <input
       type="text"
@@ -32,7 +48,10 @@ function InputNumber({
       min={min}
       value={inputValue}
       placeholder={placeholder}
+      onFocus={handleInputFocus}
+      onBlur={handleInputBlur}
       onChange={handleInputChange}
+      onKeyDown={handleInputKeyDown}
       pattern="\d*"
       className={`input-number ${className}`.trim()}
     />

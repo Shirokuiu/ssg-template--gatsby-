@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { ModalProvider } from 'react-simple-modal-provider';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -13,6 +14,9 @@ import Icon from '@assets/img/atention.svg';
 function TestPage() {
   return (
     <ModalProvider value={[TestModal]}>
+      <Helmet>
+        <title>Test page</title>
+      </Helmet>
       <PageLayout>
         <ul>
           <li>

@@ -5,7 +5,7 @@ import { useModal } from 'react-simple-modal-provider';
 import TestModalBody from '@containers/test-modal/test-modal-body/test-modal-body';
 
 function ExampleTriggerModal() {
-  const { open } = useModal(ModalId.BaseModal);
+  const { open } = useModal(ModalId.TestModal);
 
   const handleOpenModal = () => {
     open({

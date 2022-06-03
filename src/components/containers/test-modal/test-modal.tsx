@@ -10,13 +10,13 @@ function TestModal({ children }: ModalProps) {
 
   return (
     <Modal
-      id={ModalId.BaseModal}
+      id={ModalId.TestModal}
       consumer={children}
       animation={modalAnimation.slideDown}
       isOpen={isOpen}
       setOpen={setOpen}
     >
-      <ModalLayoutBody modalId={ModalId.BaseModal} />
+      <ModalLayoutBody modalId={ModalId.TestModal} />
     </Modal>
   );
 }

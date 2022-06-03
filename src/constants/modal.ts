@@ -1,3 +1,3 @@
 export enum ModalId {
-  BaseModal = 'base-modal',
+  TestModal = 'base-modal',
 }

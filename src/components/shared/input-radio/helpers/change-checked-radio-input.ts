@@ -1,7 +1,10 @@
 import { RadioInput } from '@shared/input-radio/types';
 
-export const changeCheckedRadioInput = (btns: RadioInput[], checkedValue: string): RadioInput[] =>
-  btns.map((btn) => ({
-    ...btn,
+export const changeCheckedRadioInput = (
+  radioInputs: RadioInput[],
+  checkedValue: string,
+): RadioInput[] =>
+  radioInputs.map((radioInput) => ({
+    ...radioInput,
     checkedValue,
   }));

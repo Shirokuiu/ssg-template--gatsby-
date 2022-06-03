@@ -2,8 +2,6 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 
 import { Props } from '@shared/input-text/types';
 
-import './input-text.scss';
-
 function InputText({
   id = 'input-text',
   name = 'input-text',

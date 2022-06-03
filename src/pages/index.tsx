@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
 import { useAppDispatch, useAppSelector } from '@hooks/index';
@@ -18,6 +19,9 @@ function IndexPage() {
 
   return (
     <PageLayout renderFooter={() => <h2>Hello from footer content</h2>}>
+      <Helmet>
+        <title>Index page</title>
+      </Helmet>
       <CenterLayout>
         <ul>
           <li>

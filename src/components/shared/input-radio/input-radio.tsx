@@ -2,8 +2,6 @@ import React from 'react';
 
 import { Props } from '@shared/input-radio/types';
 
-import './input-radio.scss';
-
 function InputRadio({
   children = 'Radio',
   id = 'radio',

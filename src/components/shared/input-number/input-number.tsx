@@ -2,8 +2,6 @@ import React, { ChangeEvent, FocusEvent, KeyboardEvent, useEffect, useState } fr
 
 import { Props } from '@shared/input-number/types';
 
-import './input-number.scss';
-
 function InputNumber({
   id = 'input-number',
   name = 'input-number',

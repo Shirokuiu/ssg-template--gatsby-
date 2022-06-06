@@ -20,8 +20,10 @@ function InputNumber({
   }, [value]);
 
   const handleInputChange = (evt: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(+evt.target.value);
-    onChange(+evt.target.value);
+    if (!Number.isNaN(+evt.target.value)) {
+      setInputValue(+evt.target.value);
+      onChange(+evt.target.value);
+    }
   };
 
   const handleInputBlur = () => {

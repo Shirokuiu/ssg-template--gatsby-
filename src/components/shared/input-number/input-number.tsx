@@ -6,24 +6,22 @@ function InputNumber({
   id = 'input-number',
   name = 'input-number',
   min = 1,
-  value = min,
+  value = 1,
   placeholder = '0',
   className = '',
   onChange = () => undefined,
   onBlur = () => undefined,
   onKeyDownEnter = () => undefined,
 }: Props) {
-  const [inputValue, setInputValue] = useState<number>(min);
+  const [inputValue, setInputValue] = useState<number | string>(value);
 
   useEffect(() => {
     setInputValue(value);
   }, [value]);
 
   const handleInputChange = (evt: ChangeEvent<HTMLInputElement>) => {
-    if (!Number.isNaN(+evt.target.value)) {
-      setInputValue(+evt.target.value);
-      onChange(+evt.target.value);
-    }
+    setInputValue(evt.target.value);
+    onChange(evt.target.value);
   };
 
   const handleInputBlur = () => {
@@ -42,7 +40,7 @@ function InputNumber({
 
   return (
     <input
-      type="text"
+      type="number"
       id={id}
       name={name}
       min={min}
@@ -52,7 +50,6 @@ function InputNumber({
       onBlur={handleInputBlur}
       onChange={handleInputChange}
       onKeyDown={handleInputKeyDown}
-      pattern="\d*"
       className={`input-number ${className}`.trim()}
     />
   );

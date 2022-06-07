@@ -4,7 +4,6 @@ const getValues = (enumValue: Record<string, string>): string[] => Object.values
 
 export const makeOptions = (
   enumValue: Record<string, string>,
-  defaultValue: string,
   labelMap: Record<string, string>,
 ): Option[] => {
   const values = getValues(enumValue);
@@ -13,6 +12,5 @@ export const makeOptions = (
     key: idx + 1,
     value,
     label: labelMap[value],
-    isSelected: value === defaultValue,
   }));
 };

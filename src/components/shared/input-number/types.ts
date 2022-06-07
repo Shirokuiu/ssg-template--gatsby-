@@ -1,11 +1,18 @@
 export type Props = {
   id?: string;
   name?: string;
-  value?: number;
+  value?: number | string;
   placeholder?: string;
   min?: number;
   className?: string;
-  onChange?: (value: string) => void;
-  onBlur?: (value: number | string) => void;
-  onKeyDownEnter?: (value: number | string) => void;
+  onChange?: (evt: EvtInputNumber) => void;
+  onBlur?: (evt: EvtInputNumber) => void;
+  onKeyDownEnter?: (evt: EvtInputNumber) => void;
+};
+
+export type EvtInputNumber = {
+  target: {
+    name: string;
+    value: number | string;
+  };
 };

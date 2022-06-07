@@ -16,7 +16,7 @@ function InputRadio({
   };
 
   return (
-    <label htmlFor={id} className={`input-radio ${className}`.trim()}>
+    <label className={`input-radio ${className}`.trim()}>
       <input
         type="radio"
         name={name}

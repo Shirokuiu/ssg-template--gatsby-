@@ -3,10 +3,10 @@ import React, { ChangeEvent, FocusEvent, KeyboardEvent, useEffect, useState } fr
 import { Props } from '@shared/input-number/types';
 
 function InputNumber({
+  min,
+  value = 0,
   id = 'input-number',
   name = 'input-number',
-  min = 1,
-  value = 1,
   placeholder = '0',
   className = '',
   onChange = () => undefined,
@@ -21,16 +21,16 @@ function InputNumber({
 
   const handleInputChange = (evt: ChangeEvent<HTMLInputElement>) => {
     setInputValue(evt.target.value);
-    onChange(evt.target.value);
+    onChange({ target: { name, value: +evt.target.value } });
   };
 
   const handleInputBlur = () => {
-    onBlur(inputValue);
+    onBlur({ target: { name, value: inputValue } });
   };
 
   const handleInputKeyDown = (evt: KeyboardEvent<HTMLInputElement>) => {
     if (evt.key === 'Enter') {
-      onKeyDownEnter(inputValue);
+      onKeyDownEnter({ target: { name, value: inputValue } });
     }
   };
 

@@ -5,7 +5,8 @@ export type Props = {
   name?: string;
   value?: string;
   checkedValue?: string;
-  onRadioChange?: (value: string) => void;
+  className?: string;
+  onRadioChange?: (evt: EvtRadio) => void;
   children?: ReactNode;
 };
 
@@ -16,4 +17,11 @@ export type RadioInput = {
   name: string;
   label: string;
   checkedValue: string;
+};
+
+export type EvtRadio = {
+  target: {
+    name: string;
+    value: string;
+  };
 };

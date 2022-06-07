@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "axios": "0.27.2",
+    "formik": "2.2.9",
     "gatsby": "4.14.0",
     "gatsby-plugin-image": "2.14.1",
     "gatsby-plugin-manifest": "4.15.0",
@@ -39,7 +40,8 @@
     "react-redux": "8.0.1",
     "react-simple-modal-provider": "1.9.0",
     "redux": "4.2.0",
-    "reselect": "4.1.5"
+    "reselect": "4.1.5",
+    "yup": "0.32.11"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "3.4.2",

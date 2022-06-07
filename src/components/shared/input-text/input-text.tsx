@@ -18,7 +18,7 @@ function InputText({
 
   const handleInputChange = (evt: ChangeEvent<HTMLInputElement>) => {
     setInputValue(evt.target.value);
-    onChange(evt.target.value);
+    onChange({ target: { name, value: evt.target.value } });
   };
 
   return (

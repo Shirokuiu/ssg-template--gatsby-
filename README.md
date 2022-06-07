@@ -21,6 +21,8 @@
 
 **Поддрежка плагинов:**
 - Модальные окна - https://github.com/seungdeng17/react-simple-modal-provider#api
+- Валидация форм - Formik https://github.com/jaredpalmer/formik
+- Валидаторы для форм - Yup https://github.com/jquense/yup
 
 **Файловая система**
 

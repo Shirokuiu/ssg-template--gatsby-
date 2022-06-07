@@ -6,6 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import PageLayout from '@layouts/page-layout/page-layout';
 import SvgSpriteIcon from '@shared/svg-sprite-icon/svg-sprite-icon';
+import ExampleForm from '@containers/example-form/example-form';
 import ExampleTriggerModal from '@containers/example-trigger-modal/example-trigger-modal';
 import TestModal from '@containers/test-modal/test-modal';
 
@@ -39,6 +40,9 @@ function TestPage() {
           </li>
           <li>
             <SvgSpriteIcon id="shopping-cart" />
+          </li>
+          <li>
+            <ExampleForm />
           </li>
           <li>
             <Link to="/">Go home</Link>

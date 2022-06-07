@@ -6,18 +6,17 @@ import './select.scss';
 
 function Select({
   id = 'select',
+  value = '',
   name = 'select',
   options = [],
   className = '',
   onChange = () => undefined,
 }: Props) {
-  const [selectedValue, setSelectedValue] = useState<string | undefined>(
-    options.find((option) => option.isSelected)?.value,
-  );
+  const [selectedValue, setSelectedValue] = useState<string | undefined>(value);
 
   const handleSelectChange = (evt: ChangeEvent<HTMLSelectElement>) => {
     setSelectedValue(evt.target.value);
-    onChange(evt.target.value);
+    onChange({ target: { name, value: evt.target.value } });
   };
 
   return (
@@ -31,8 +30,11 @@ function Select({
           onChange={handleSelectChange}
           className="select__item"
         >
-          {options.map(({ key, value, label }) => (
-            <option key={key} value={value}>
+          <option value="" disabled hidden>
+            Выберите значение
+          </option>
+          {options.map(({ key, value: optionValue, label }) => (
+            <option key={key} value={optionValue}>
               {label}
             </option>
           ))}

@@ -4,5 +4,12 @@ export type Props = {
   value?: string;
   placeholder?: string;
   className?: string;
-  onChange?: (value: string) => void;
+  onChange?: (evt: EvtInputText) => void;
+};
+
+export type EvtInputText = {
+  target: {
+    name: string;
+    value: string;
+  };
 };

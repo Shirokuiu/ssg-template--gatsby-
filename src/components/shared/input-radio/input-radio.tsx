@@ -8,6 +8,7 @@ function InputRadio({
   value = 'radioItem',
   name = 'radioGroup',
   checkedValue = '',
+  className = '',
   onRadioChange = () => undefined,
 }: Props) {
   const handleChange = () => {
@@ -15,7 +16,7 @@ function InputRadio({
   };
 
   return (
-    <label htmlFor={id} className="input-radio">
+    <label htmlFor={id} className={`input-radio ${className}`.trim()}>
       <input
         type="radio"
         name={name}

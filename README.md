@@ -7,6 +7,7 @@
 **Поддрежка инструментов:**
 - Axios
 - Redux
+- Redux Toolkit
 - Reselect
 - Typescript
 - Eslint

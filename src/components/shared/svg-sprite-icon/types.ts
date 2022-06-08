@@ -1,4 +1,4 @@
-export type Props = {
+export type SvgSpriteIconProps = {
   id: string;
   className?: string;
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Props } from '@shared/svg-sprite-icon/types';
+import { SvgSpriteIconProps } from '@shared/svg-sprite-icon/types';
 
-function SvgSpriteIcon({ id, className }: Props) {
+function SvgSpriteIcon({ id, className }: SvgSpriteIconProps) {
   return (
     <svg className={`svg-icon ${className ?? ''}`.trim()}>
       <use xlinkHref={`#${id}`} />

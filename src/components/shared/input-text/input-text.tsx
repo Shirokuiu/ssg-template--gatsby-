@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { Props } from '@shared/input-text/types';
+import { InputTextProps } from '@shared/input-text/types';
 
 function InputText({
   id = 'input-text',
@@ -9,7 +9,7 @@ function InputText({
   placeholder = '',
   className = '',
   onChange = () => undefined,
-}: Props) {
+}: InputTextProps) {
   const [inputValue, setInputValue] = useState<string>(value);
 
   useEffect(() => {

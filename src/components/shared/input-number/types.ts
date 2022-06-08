@@ -1,4 +1,4 @@
-export type Props = {
+export type InputNumberProps = {
   id?: string;
   name?: string;
   value?: number | string;

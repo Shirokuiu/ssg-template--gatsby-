@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-export type Props = {
+export type InputRadioProps = {
   id?: string;
   name?: string;
   value?: string;

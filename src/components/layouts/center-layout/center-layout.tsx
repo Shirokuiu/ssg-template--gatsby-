@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Props } from '@layouts/center-layout/types';
+import { CenterLayoutProps } from '@layouts/center-layout/types';
+
 import './center-layout.scss';
 
-function CenterLayout({ children }: Props) {
+function CenterLayout({ children }: CenterLayoutProps) {
   return <div className="center-layout">{children}</div>;
 }
 

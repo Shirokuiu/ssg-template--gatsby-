@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FocusEvent, KeyboardEvent, useEffect, useState } from 'react';
 
-import { Props } from '@shared/input-number/types';
+import { InputNumberProps } from '@shared/input-number/types';
 
 function InputNumber({
   min,
@@ -12,7 +12,7 @@ function InputNumber({
   onChange = () => undefined,
   onBlur = () => undefined,
   onKeyDownEnter = () => undefined,
-}: Props) {
+}: InputNumberProps) {
   const [inputValue, setInputValue] = useState<number | string>(value);
 
   useEffect(() => {

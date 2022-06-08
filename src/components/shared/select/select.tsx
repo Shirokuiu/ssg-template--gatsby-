@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from 'react';
 
-import { Props } from '@shared/select/types';
+import { SelectProps } from '@shared/select/types';
 
 import './select.scss';
 
@@ -11,7 +11,7 @@ function Select({
   options = [],
   className = '',
   onChange = () => undefined,
-}: Props) {
+}: SelectProps) {
   const [selectedValue, setSelectedValue] = useState<string | undefined>(value);
 
   const handleSelectChange = (evt: ChangeEvent<HTMLSelectElement>) => {

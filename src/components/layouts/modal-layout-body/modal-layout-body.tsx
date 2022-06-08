@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useModalProps } from 'react-simple-modal-provider';
 
-import { Props } from '@layouts/modal-layout-body/types';
+import { ModalLayoutBodyProps } from '@layouts/modal-layout-body/types';
 
 import './modal-layout-body.scss';
 
-function ModalLayoutBody({ modalId }: Props) {
+function ModalLayoutBody({ modalId }: ModalLayoutBodyProps) {
   const { component } = useModalProps(modalId);
   const { documentElement } = document;
 

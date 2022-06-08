@@ -1,4 +1,4 @@
-export type Props = {
+export type InputEmailProps = {
   id?: string;
   name?: string;
   value?: string;

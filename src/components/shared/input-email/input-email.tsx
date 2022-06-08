@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { Props } from '@shared/input-email/types';
+import { InputEmailProps } from '@shared/input-email/types';
 
 function InputEmail({
   id = 'input-email',
@@ -9,7 +9,7 @@ function InputEmail({
   placeholder = '',
   className = '',
   onChange = () => undefined,
-}: Props) {
+}: InputEmailProps) {
   const [inputValue, setInputValue] = useState<string>(value);
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { CheckboxProps } from '@shared/input-checkbox/types';
+import { InputCheckboxProps } from '@shared/input-checkbox/types';
 
 function InputCheckbox({
   children,
@@ -9,7 +9,7 @@ function InputCheckbox({
   id = 'checkbox',
   isChecked = false,
   onChange = () => undefined,
-}: CheckboxProps) {
+}: InputCheckboxProps) {
   const [checked, setChecked] = useState<boolean>(false);
 
   useEffect(() => {

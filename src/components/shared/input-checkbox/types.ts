@@ -5,7 +5,7 @@ type BaseCheckbox = {
   isChecked?: boolean;
 };
 
-export interface CheckboxProps extends BaseCheckbox {
+export interface InputCheckboxProps extends BaseCheckbox {
   children?: JSX.Element | string;
   onChange?: (evt: EvtCheckboxChange) => void;
 }

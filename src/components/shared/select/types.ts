@@ -1,4 +1,4 @@
-export type Props = {
+export type SelectProps = {
   id?: string;
   value?: string;
   name?: string;

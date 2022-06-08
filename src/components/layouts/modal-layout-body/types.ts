@@ -1,5 +1,5 @@
-import { ModalId } from '@shared/base-modal/types';
+import { ModalId } from '@constants/modal';
 
-export type Props = {
+export type ModalLayoutBodyProps = {
   modalId: ModalId;
 };

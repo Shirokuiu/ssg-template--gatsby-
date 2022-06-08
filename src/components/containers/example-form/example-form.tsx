@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { toggleCheckedValues } from '@shared/input-checkbox/helpers/toggle-checked-values';
 import InputCheckbox from '@shared/input-checkbox/input-checkbox';
 import { EvtCheckboxChange } from '@shared/input-checkbox/types';
+import InputEmail from '@shared/input-email/input-email';
 import InputNumber from '@shared/input-number/input-number';
 import InputRadio from '@shared/input-radio/input-radio';
 import InputText from '@shared/input-text/input-text';
@@ -20,6 +21,7 @@ function ExampleForm() {
     initialValues: {
       text: '',
       number: '',
+      email: '',
       radioGroup: '',
       select: '',
       checkboxes: [],
@@ -27,6 +29,7 @@ function ExampleForm() {
     validationSchema: Yup.object({
       text: Yup.string().required('Обязательное поле'),
       number: Yup.number().required('Обязательное поле'),
+      email: Yup.string().email('Введите корректный email').required('Обязательное поле'),
       radioGroup: Yup.string().required('Выберите значение'),
       select: Yup.string().required('Выберите значение'),
       checkboxes: Yup.array().min(1, 'Выберите хотя бы одно значение'),
@@ -61,6 +64,15 @@ function ExampleForm() {
             onChange={formik.handleChange}
           />
           {formik.touched.number && formik.errors.number && <p>{formik.errors.number}</p>}
+        </li>
+        <li>
+          <InputEmail
+            id="email"
+            name="email"
+            value={formik.values.email}
+            onChange={formik.handleChange}
+          />
+          {formik.touched.email && formik.errors.email && <p>{formik.errors.email}</p>}
         </li>
         <li>
           <InputRadio

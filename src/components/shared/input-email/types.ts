@@ -1,13 +1,13 @@
-export type InputTextProps = {
+export type InputEmailProps = {
   id?: string;
   name?: string;
   value?: string;
   placeholder?: string;
   className?: string;
-  onChange?: (evt: EvtInputText) => void;
+  onChange?: (evt: EvtInputEmail) => void;
 };
 
-export type EvtInputText = {
+export type EvtInputEmail = {
   target: {
     name: string;
     value: string;

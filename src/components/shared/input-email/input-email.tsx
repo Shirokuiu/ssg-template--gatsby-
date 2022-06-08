@@ -1,15 +1,15 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { InputTextProps } from '@shared/input-text/types';
+import { InputEmailProps } from '@shared/input-email/types';
 
-function InputText({
-  id = 'input-text',
-  name = 'input-text',
+function InputEmail({
+  id = 'input-email',
+  name = 'input-email',
   value = '',
   placeholder = '',
   className = '',
   onChange = () => undefined,
-}: InputTextProps) {
+}: InputEmailProps) {
   const [inputValue, setInputValue] = useState<string>(value);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function InputText({
 
   return (
     <input
-      type="text"
+      type="email"
       id={id}
       name={name}
       value={inputValue}
@@ -34,4 +34,4 @@ function InputText({
   );
 }
 
-export default InputText;
+export default InputEmail;

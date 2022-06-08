@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
 
-export type Props = PropsWithChildren<{
+export type PageLayoutProps = PropsWithChildren<{
   renderFooter?: () => JSX.Element | null;
 }>;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Props } from '@shared/input-radio/types';
+import { InputRadioProps } from '@shared/input-radio/types';
 
 function InputRadio({
   children = 'Radio',
@@ -10,7 +10,7 @@ function InputRadio({
   checkedValue = '',
   className = '',
   onRadioChange = () => undefined,
-}: Props) {
+}: InputRadioProps) {
   const handleChange = () => {
     onRadioChange({ target: { name, value } });
   };

@@ -1,78 +1,72 @@
+@import 'src/assets/styles/variables';
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
-  src: url('../fonts/roboto-v30-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-  url('../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
   url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
   url('../fonts/roboto-v30-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   font-display: swap;
-  src: url('../fonts/roboto-v30-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
   src: local(''),
-  url('../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
   url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
   url('../fonts/roboto-v30-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 body {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  font-weight: 400;
   font-style: normal;
+  line-height: 16px;
+  color: $black;
 }
 
 *::-webkit-input-placeholder {
-  color: #808080;
   font-size: 19px;
-  line-height: 23px;
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
-
+  font-weight: 400;
+  line-height: 23px;
+  color: $input-placeholder;
   opacity: 1;
 }
 
 *:-moz-input-placeholder {
-  color: #808080;
   font-size: 19px;
-  line-height: 23px;
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
-
+  font-weight: 400;
+  line-height: 23px;
+  color: $input-placeholder;
   opacity: 1;
+
 }
 
 *::-moz-placeholder {
-  color: #808080;
   font-size: 19px;
-  line-height: 23px;
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
-
+  font-weight: 400;
+  line-height: 23px;
+  color: $input-placeholder;
   opacity: 1;
 }
 
 *:-ms-input-placeholder {
-  color: #808080;
   font-size: 19px;
-  line-height: 23px;
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
-
+  font-weight: 400;
+  line-height: 23px;
+  color: $input-placeholder;
   opacity: 1;
 }
+
